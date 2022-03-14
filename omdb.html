@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2 id="logo-icon">OMDb</h2>
+
+
+        <div id="search-bar">
+            <div id="search-field">
+                <select name="type" id="select-type">
+                <option value="">All</option>
+                <option value="movies">Movies</option>
+                <option value="series">Series</option>
+            </select>
+                <input type="text" id="title-search" placeholder="Search by title">
+                <button id="submit-button" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+
+            <div id="autocomplete-container"></div>
+        </div>
+
+
+
+
+
+    </header>
+
+    <main>
+        <h2 id="error"></h2>
+
+        <div id="result-page">
+        </div>
+
+        <div id="pagination">
+
+            <button id="prev" disabled>Previuos Page</button>
+            <span id="page"></span>
+            <button id="next" disabled>Next Page</button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
