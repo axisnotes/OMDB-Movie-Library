@@ -56,7 +56,7 @@ searchInput.addEventListener("input", function() {
 function fillAutocomplete(titleInput, type) {
     resultPage.innerHTML = "";
     autocompleteContainer.innerHTML = "";
-    fetch(`http://www.omdbapi.com/?apikey=a6d0fd52&s=${titleInput}&type=${type}`)
+    fetch(`https://www.omdbapi.com/?apikey=a6d0fd52&s=${titleInput}&type=${type}`)
         .then(resp => resp.json())
         .then(data => {
             if (data.Response === "True") {
@@ -90,7 +90,7 @@ function fillAutocomplete(titleInput, type) {
 function fetchData(titleInput, type, currentPage) {
     error.innerHTML = "";
     resultPage.innerHTML = "";
-    fetch(`http://www.omdbapi.com/?apikey=a6d0fd52&s=${titleInput}&type=${type}&page=${currentPage}`)
+    fetch(`https://www.omdbapi.com/?apikey=a6d0fd52&s=${titleInput}&type=${type}&page=${currentPage}`)
         .then(resp => resp.json())
         .then(data => {
             if (data.Response === "False") {
